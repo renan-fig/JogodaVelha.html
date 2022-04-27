@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    text-align: center;
+    margin:auto;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.quadrado{
+    text-align: center;
+    background-color: rgb(210, 217, 217);
+    display: inline-block;
+    margin: 5px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 50px;
+    height:80px;
+    font-size: 60px;
+    cursor: pointer;
+    color:rgb(210, 217, 217)
+}
+
+.jogador{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.vencedor{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(210, 217, 217);
+    cursor: pointer;
+    font-family: 'Anton', sans-serif; ;
+}
+
+button:hover{
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+    background-color: rgb(204, 214, 57);
+}
