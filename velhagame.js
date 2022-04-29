@@ -1,3 +1,4 @@
+//Função que irá armazenar o valor de 'X' ou 'O' no jogo
 function escolha(id){
     var quadrado = document.getElementById(id);
 
@@ -20,11 +21,13 @@ function escolha(id){
     checaVencedor(vencedor);
 }
 
+//Funão para mudar o jogador que irá jogar
 function mudarJogador(valor){
     jogador = valor;
     jogadorSelecionado.innerHTML = jogador;
 }
 
+//Função para verificar quem ganhou
 function checaVencedor(){
     var quadrado1 = document.getElementById('1')
     var quadrado2 = document.getElementById('2')
@@ -77,6 +80,8 @@ function checaVencedor(){
     }
 
 }
+
+//Função para auxiliar na checagem dos blocos "vencedores"
 function checagem(quad1, quad2, quad3){
     var igual = false;
 
@@ -86,16 +91,21 @@ function checagem(quad1, quad2, quad3){
 
     return igual;
 }
+
+//Função para mudar a cor dos "blocos" vencedores para verde
 function mudaCor(quad1, quad2, quad3){
     quad1.style.background = '#0f0';
     quad2.style.background = '#0f0';
     quad3.style.background = '#0f0';
 }
+
+//Função para alterar o placar do vencedor
 function mudarVencedor(venc){
     vencedor = venc.innerHTML;
     vencedorSelecionado.innerHTML = vencedor;
 }
 
+//Função para reiniciar o jogo ao clicar no botão reiniciar
 function reiniciar(){
     vencedor = null;
     vencedorSelecionado.innerHTML = '';
@@ -109,6 +119,8 @@ function reiniciar(){
 
     mudarJogador('X');
 }
+
+//Variáveis utilizadas no jogo
 let quadrados = document.getElementsByClassName('quadrado');
 let jogador, vencedor = null;
 let jogadorSelecionado = document.getElementById(elementId = "player-sel");
